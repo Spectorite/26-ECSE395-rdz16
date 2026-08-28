@@ -1,6 +1,6 @@
 # Lab 1 Overview
 ## Ray Zhang
-
+## A tutorial of Github and Markdown
 This lab is a tutorial on all the important fundementals to file management and digital notekeeping.
 
 It covers the basics of Markdown, an HTML based language that helps create documents, and Github, a popular file management system.
@@ -22,7 +22,7 @@ Then, it moves on to using Github to store this lab log alongside a weekly log t
 
 ## Reflections
 
-The project took about 4 hours from the start, and was intimidating, but surprisingly simple.  Overall, the difficulty was medium.
+The project took about 4 hours from the start, and was intimidating, but surprisingly simple.  Suprisingly, there were not technical issues on my end, which is good.  Overall, the difficulty was medium.
 However, I do feel like the weekly logs require too much detail.  It requires an encyclopedic memory of past events, and I don't really find it necessary to document in this level of detail.
 It is still important to document things to keep track of progress and for a lot of legal things in the future, and I find it very useful to get used to markdown editing and using github.  These are things I've done in the past, but never seriously used, and I'm glad I'm learning about this.
 This course looks to be intimidating for me, even when I'm a Junior.  Despite being on track to completing my majors, I'm saving all my technical and major related classes for the end, so I do not have much experience working with electrical devices.  I do develop games, which comes in useful for designing, testing, and debugging, but I have little knowledge of electrical components.

@@ -1,0 +1,1 @@
+This is a weekly log of project activity to document progress and ensure accountability

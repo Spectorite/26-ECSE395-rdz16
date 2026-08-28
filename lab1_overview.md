@@ -14,4 +14,5 @@ It covers the basics of Markdown, an HTML based language that helps create docum
 5. Create README.md, the weekly project log folder, and the week 1 project log
 6. Update the week 1 project log and write a description for README
 7. Create a screenshot of the email
-8.
+8. Commit and push the changes onto Github
+9. Submit the assignment

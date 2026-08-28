@@ -1,4 +1,3 @@
-
 # Week 1 Log
 
 ### Ray Zhang
@@ -20,9 +19,8 @@
 - Reviewed feedback from needfinding email, and updated it with the correct name
 - Created the week 1 log, weekly project log folder, and Github repo 
 - Sent needfinding email after review from teammates
+- [!image]()
 - Signed the locker assignments along with teammates
 - Selected a role for the team contract.  Team contract was drafted from the template, and roles were selected based on current approximate roles
 - Reviewed the team contract for submission
 - Logged all the events from August 26th onwards
-
-- <img width="1008" height="626" alt="EmailScreenshot" src="https://github.com/user-attachments/assets/cf24f198-2a5c-4e3e-91cc-2e98649b2b3c" />

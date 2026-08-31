@@ -28,3 +28,11 @@
 - Logged all the events from August 26th onwards
 
 <img width="1008" height="626" alt="Screenshot 2026-08-28 at 3 07 53 PM" src="https://github.com/user-attachments/assets/32a0783c-69ce-43f7-895b-6ca33d7ba870" />
+
+#### 8/29/2026
+
+- Checked emails for stakeholder response
+
+#### 8/30/2026
+
+- Checked emails for stakeholder response

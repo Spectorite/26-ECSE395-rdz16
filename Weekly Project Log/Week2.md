@@ -34,6 +34,9 @@
 
 #### 9/4/2026
 
+- Attempted and finished Lab 2
+- Decided as a group that a meeting will not be necessary today
+
 #### Meetings
 
 #### 8/31/2026, 3:00-4:00 PM

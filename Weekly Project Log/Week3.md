@@ -18,6 +18,7 @@
 - Informed group members of required revisions for the project background
 - Proofread the project background assignment
 - Facilitated other members to proofread before submission
+- Submitted the Project Background
 - Watched the Special Guest video, and did the special guest quiz
 
 #### 9/10/2026

@@ -1,4 +1,4 @@
-# Week 2 Log
+# Week 3 Log
 
 ### Ray Zhang
 

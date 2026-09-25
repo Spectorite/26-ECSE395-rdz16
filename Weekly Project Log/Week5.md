@@ -28,12 +28,10 @@
 #### 9/24/2026
 
 
-
 #### 9/25/2026
 
-- Did lab 4.  Details in the Lab 4 folder under Actuator_adventures
-- Did not adventure much due to workload.  Kinda sad about it
-- Worked on the concept email to stakeholders
+- Sent a zoom link to stakeholder
+
 
 #### Meetings
 

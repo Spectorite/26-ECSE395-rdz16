@@ -36,4 +36,11 @@ documentation to pass time.
 - Sensor: photoresistor.  Actuator: TT motor
 - ESP 32 hooked upto computer, connected to photoresistor and TT motor.  
 - Used current limiter to 0.15 A, voltage used is 3.3 V
-
+- The VCC of the Photoresistor is connected to the 3.3V of the ESP 32
+- The GND of the Photoresistor is connected to the GND of the ESP 32
+- The Output of the Photoresistor is connected to A2
+- The VCC of the Motor is connected to the 3.3V of the ESP 32
+- The GND of the Motor is connected to the GND of the ESP 32
+- The B1A of the Motor is connected to A0 of the ESP 32
+- The B1B of the Motor is connected to the A1 of the ESP 32
+- The photo of the circuit and the video of the working circuit is included in the lab file

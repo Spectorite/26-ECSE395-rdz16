@@ -1,3 +1,5 @@
+
+
 #include <Arduino.h>
 
 /*
@@ -8,7 +10,7 @@
   Board: ESP32 Development Board
   Component: Ultrasonic distance Sensor(HC-SR04)
 */
-
+/*
 // Define the pin numbers for the ultrasonic sensor
 const int echoPin = GPIO_NUM_12;
 const int trigPin = GPIO_NUM_27;
@@ -47,4 +49,5 @@ void loop() {
 
   }
 }
+*/
 

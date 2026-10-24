@@ -8,7 +8,7 @@
   Component: Real Time Clock Module  (DS1302)
   Library: https://github.com/Makuna/Rtc (Rtc by Makuna)
 */
-/*
+
 #include <ThreeWire.h>
 #include <RtcDS1302.h>
 
@@ -22,6 +22,7 @@ int lastButtonState = 0;
 bool buttonFlag = false;
 int minutes = -1;
 int seconds = -1;
+int alarmSetAtHours = -1;
 int alarmSetAtMinutes = -1;
 int alarmSetAtSeconds = -1;
 bool alarmSet = false;
@@ -31,7 +32,7 @@ bool stateChangedThisTick = false;
 
 ThreeWire myWire(IO, SCLK, CE);
 RtcDS1302<ThreeWire> Rtc(myWire);
-
+/*
 void printDateTime(const RtcDateTime& dt) {
   char datestring[20];
 
@@ -50,6 +51,31 @@ void printDateTime(const RtcDateTime& dt) {
 std::tuple<int,int> getMinuteAndSecond(const RtcDateTime& dt) {
     
     return {dt.Minute(), dt.Second()};
+
+}
+
+void snoozeSet(int hours, int minutes){
+
+  alarmSet = true;
+  alarmSetAtHours = hours;
+  alarmSetAtMinutes = minutes;
+
+}
+
+bool checkSnooze(const RtcDateTime& dt){
+
+  int currentHours = dt.Hour();
+  int currentMinutes = dt.Minutes();
+
+  if(currentHours == alarmSetAtHours && currentMinutes == alarmSetAtMinutes){
+
+    alarmSet = false;
+    return true;
+  
+  }
+
+  return false;
+
 
 }
 
@@ -137,7 +163,42 @@ bool checkIfAlarmSounds(int minutes, int seconds, int alarmMinutes, int alarmSec
     }
 
 }
+*/
 
+//Checks if the button is pressed down.  If it's being held, it returns false
+//If it's just pressed, it returns true.  If it's not down, it reurns false
+//Also updates the button state
+bool button_just_pressed(bool *last_button_state_pointer){
+
+  int current_button_state = digitalRead(buttonPin);
+
+
+  if(current_button_state == HIGH){
+
+    *last_button_state_pointer = HIGH;
+    return false;
+
+  } else{
+   
+    if(*last_button_state_pointer == HIGH){
+
+      *last_button_state_pointer = LOW;
+      return true;
+    
+    } else{
+    
+      *last_button_state_pointer = LOW;
+      return false;
+    
+    }
+  
+  }
+
+
+}
+
+
+/*
 void loop() {
   
   stateChangedThisTick = false;
@@ -156,6 +217,7 @@ void loop() {
     //    1) the battery on the device is low or even missing and the power line was disconnected
     Serial.println("RTC lost confidence in the DateTime!");
   }
+
 
 
   // Read the current state of the button

@@ -19,11 +19,14 @@
 #### 10/15/2026
 
 - Editted the Gantt Chart and Concept Selection
-- Editted the Prototyping 
+- Editted the Prototyping document
 
 #### 10/16/2026
 
-- 
+- Researched ways of wireless communication of ESP 32 and phone
+- Tested BLE connection between ESP 32 and IPhone
+- Helped prototype a system of two actuators and one notifier
+- Written an email to the stakeholder for specifications about dog cage and windows
 
 #### Meetings
 

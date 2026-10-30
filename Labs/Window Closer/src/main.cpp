@@ -10,10 +10,19 @@
   Board: ESP32 Development Board
   Component: Ultrasonic distance Sensor(HC-SR04)
 */
-/*
+
 // Define the pin numbers for the ultrasonic sensor
-const int echoPin = GPIO_NUM_12;
-const int trigPin = GPIO_NUM_27;
+//const int echoPin = GPIO_NUM_12;
+//const int trigPin = GPIO_NUM_27;
+
+const int ledPin = GPIO_NUM_13;
+const int buttonPin = GPIO_NUM_27;
+
+int buttonState = HIGH;
+int lastButtonState;
+
+
+/*
 // Function to read the sensor data and calculate the distance
 float readDistance() {
   digitalWrite(trigPin, LOW);   // Set trig pin to low to ensure a clean pulse
@@ -26,14 +35,68 @@ float readDistance() {
   float distance = pulseIn(echoPin, HIGH) / 58.00;  // Formula: (340m/s * 1us) / 2
   return distance;
 }
+*/
+
+
+
 void setup() {
   Serial.begin(115200);                    // Start serial communication with a baud rate of 9600
-  pinMode(echoPin, INPUT);               // Set echo pin as input
-  pinMode(trigPin, OUTPUT);              // Set trig pin as output
-  Serial.println("Ultrasonic sensor:");  // Print a message indicating the ultrasonic sensor is read
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT);
+  //pinMode(echoPin, INPUT);               // Set echo pin as input
+  //pinMode(trigPin, OUTPUT);              // Set trig pin as output
+  //Serial.println("Ultrasonic sensor:");  // Print a message indicating the ultrasonic sensor is read
+}
+bool button_just_pressed(int *last_button_state_pointer){
+
+  int current_button_state = digitalRead(buttonPin);
+
+
+  if(current_button_state == HIGH){
+
+    *last_button_state_pointer = HIGH;
+    return false;
+
+  } else{
+   
+    if(*last_button_state_pointer == HIGH){
+
+      *last_button_state_pointer = LOW;
+      return true;
+    
+    } else{
+    
+      *last_button_state_pointer = LOW;
+      return false;
+    
+    }
+  
+  }
+
+
 }
 
 void loop() {
+
+  
+
+  
+  int is_button_just_pressed = button_just_pressed(&buttonState);
+
+  if(buttonState == LOW){
+    
+    Serial.println("Pressed");
+    digitalWrite(ledPin, HIGH);
+
+
+  } else{
+
+    Serial.println("Not Pressed");
+    digitalWrite(ledPin, LOW);
+
+  }
+
+  /*
   float distance = readDistance();  // Call the function to read the sensor data and get the distance
   Serial.print(distance);           // Print the distance value
   Serial.println(" cm");            // Print " cm" to indicate the unit of measurement
@@ -48,6 +111,9 @@ void loop() {
     Serial.println("Window open");
 
   }
+  */
+
+  delay(500);
 }
-*/
+
 

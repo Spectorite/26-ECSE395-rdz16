@@ -1,3 +1,6 @@
+
+
+
 /*
   This code initializes and sets up the RTC DS1302 module and prints the current date and 
   time on the serial monitor. It also checks if the RTC is running and has a valid date and time. 
@@ -9,6 +12,7 @@
   Library: https://github.com/Makuna/Rtc (Rtc by Makuna)
 */
 
+/*
 #include <ThreeWire.h>
 #include <RtcDS1302.h>
 
@@ -32,6 +36,10 @@ bool stateChangedThisTick = false;
 
 ThreeWire myWire(IO, SCLK, CE);
 RtcDS1302<ThreeWire> Rtc(myWire);
+
+*/
+
+
 /*
 void printDateTime(const RtcDateTime& dt) {
   char datestring[20];
@@ -165,6 +173,7 @@ bool checkIfAlarmSounds(int minutes, int seconds, int alarmMinutes, int alarmSec
 }
 */
 
+/*
 //Checks if the button is pressed down.  If it's being held, it returns false
 //If it's just pressed, it returns true.  If it's not down, it reurns false
 //Also updates the button state
@@ -197,7 +206,7 @@ bool button_just_pressed(bool *last_button_state_pointer){
 
 }
 
-
+*/
 /*
 void loop() {
   
@@ -282,3 +291,5 @@ void loop() {
 #define countof(a) (sizeof(a) / sizeof(a[0]))
 
 */
+
+
